@@ -15,6 +15,7 @@ function getComputerTurn() {
         return 'scissors'
     }
 }
+
 function getPlayerTurn() {
     let input = prompt('Rock, Paper, or Scissors').toLowerCase()
     if (input === 'rock') {
@@ -27,7 +28,32 @@ function getPlayerTurn() {
         console.log('Invalid input')
     }
 }
+
+
+// Get the inputs of computer and player and then compare 
+function playRound(computerChoice, playerChoice) {
+    if (computerChoice === playerChoice) {
+        return 'Tie'
+    } else if (computerChoice === 'rock' && playerChoice === 'paper') {
+        return `You win! ${playerChoice} beats ${computerChoice}`
+    } else if (computerChoice === 'rock' && playerChoice === 'scissors') {
+        return `You Lose! ${computerChoice} beats ${playerChoice}`
+    } else if (computerChoice === 'paper' && playerChoice === 'rock') {
+        return `You Lose! ${computerChoice} beats ${playerChoice}`
+    } else if (computerChoice === 'paper' && playerChoice === 'scissors') {
+        return `You win! ${playerChoice} beats ${computerChoice}`
+    } else if (computerChoice === 'scissors' && playerChoice === 'rock') {
+        return `You win! ${playerChoice} beats ${computerChoice}`
+    } else if (computerChoice === 'scissors' && playerChoice === 'paper') {
+        return `You Lose! ${computerChoice} beats ${playerChoice}`
+    }
+}
+
 function main() {
-    console.log(getPlayerTurn())
+    for (let i = 0; i < 5; i++) {
+        let playerTurn = getPlayerTurn()
+        let computerTurn = getComputerTurn()
+        console.log(playRound(computerTurn, playerTurn))
+    }
 }
 main()
