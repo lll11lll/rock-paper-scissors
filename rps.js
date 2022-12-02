@@ -8,11 +8,26 @@
 function getComputerTurn() {
     let num = Math.floor(Math.random() * 3) + 1;
     if (num == 1) {
-        return 'Rock'
+        return 'rock'
     } else if (num == 2) {
-        return 'Paper'
+        return 'paper'
     } else {
-        return 'Scissors'
+        return 'scissors'
     }
 }
-console.log(getComputerTurn());
+function getPlayerTurn() {
+    let input = prompt('Rock, Paper, or Scissors').toLowerCase()
+    if (input === 'rock') {
+        return 'rock'
+    } else if (input === 'paper') {
+        return 'paper'
+    } else if (input === 'scissors') {
+        return 'scissors'   
+    } else {
+        console.log('Invalid input')
+    }
+}
+function main() {
+    console.log(getPlayerTurn())
+}
+main()
