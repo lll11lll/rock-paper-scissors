@@ -1,18 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Rock-Paper-Scissors</title>
-  </head>
-  <body>
-    <script src="rps.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="rps.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock-Paper-Scissors</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="column">
+      <h1 class="player text ">Player</h1>
+      <div class="picCont">
+        <div class="picture">
+          <img class = "pic" src="images/defaultUser.jpg" alt="Player" width="350" height="250">
+        </div>
+      </div>
+      <div class="livesCont">
+        <h3 class="text PT">Lives</h3>
+        <div class="heartBox">
+          <img class='pHeart' src="images/heartFindNBG.png" alt="player's lives">
+          <img class='pHeart' src="images/heartFindNBG.png" alt="player's lives">
+          <img class='pHeart' src="images/heartFindNBG.png" alt="player's lives">
+          <img class='pHeart' src="images/heartFindNBG.png" alt="player's lives">
+          <img class='pHeart' src="images/heartFindNBG.png" alt="player's lives">
+        </div>
+      </div>
+      <div class="actionButtonCont">
+        <h3 class="text PT">Actions</h3>
+        <div class="buttonBox">
+            <button class="rockPButton playerButton" type="button">Rock</button>
+            <button class="paperPButton playerButton" type="button">Paper</button>
+            <button class="scissorPButton playerButton" type="button">Scissor</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="column">
+
+      <h1 class="computer text">Computer</h1>
+      <div class="picCont">
+        <div class="picture">
+          <img class="pic" src="images/computerFace.jpg" alt="Evil computer" width="350" height="250">
+        </div>
+      </div>
+      <div class="livesCont">
+        <h3 class="text CT">Lives</h3>
+        <div class="heartBox">
+          <img class='cHeart' src="images/heartFindNBG.png" alt="computer's lives" >
+          <img class='cHeart' src="images/heartFindNBG.png" alt="computer's lives" >
+          <img class='cHeart' src="images/heartFindNBG.png" alt="computer's lives">
+          <img class='cHeart' src="images/heartFindNBG.png" alt="computer's lives">
+          <img class='cHeart' src="images/heartFindNBG.png" alt="computer's lives">
+        </div>
+      </div>
+      <div class="actionButtonCont">
+        <h3 class="text CT">Actions</h3>
+        <div class="buttonBox">
+            <button class="rockCButton compButton" type="button">?</button>
+            <button class="paperCButton compButton" type="button">?</button>
+            <button class="scissorsCButton compButton" type="button">?</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <button class="confirmButton">Confirm</button>
+  </div>
+</body>
+
 </html>

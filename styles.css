@@ -1,0 +1,159 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.column {
+    border: solid black 2px;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+    background-color: rgba(34, 30, 30, 0.123);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  .player, .computer, .text{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+    border: solid 2px #000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+.player, .PT {
+    color: #2196F3;
+}
+.computer, .CT{
+    color: #F44336;
+}
+
+
+.picCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picture {
+    width: 350px;
+    border: solid black 2px;
+    margin-top: 20px;
+}
+
+.livesCont {
+    margin-top: 20px;
+  }
+.heartBox, .buttonBox{ 
+    height: 150px;
+    
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.heartBox img {
+    width: 150px; 
+    height: 75px; 
+    background: transparent;
+    margin-top: 0 5px;
+  }
+.actionButtonCont {
+    margin-top: 30px;
+}
+
+
+.playerButton:hover {
+    background-color: #5fa5dd;
+  }
+
+  .compButton:hover {
+    pointer-events: none;
+  }
+
+
+.playerButton {
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.compButton {
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: black;
+    color: #fff
+}
+
+
+.rockPButton {
+    background-color: #b30000;
+    color: #fff;
+}
+
+.paperPButton {  
+    background-color: #0066cc;
+    color: #fff;}
+.scissorPButton {
+    background-color: #9900cc;
+    color: #fff;
+}
+
+.greenBG {
+    background-color: #5cb85c;
+
+}
+
+.confirmButton {
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 50px auto;
+  }
+  
+  
